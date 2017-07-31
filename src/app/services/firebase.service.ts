@@ -22,7 +22,7 @@ export class FirebaseService {
     return this.listing;
   }
 
-  addListing(listing){
+  addListing(listing : Listing){
     // Create root ref
     let storageRef = firebase.storage().ref();
     for(let selectedFile of [(<HTMLInputElement>document.getElementById('image')).files[0]]){
